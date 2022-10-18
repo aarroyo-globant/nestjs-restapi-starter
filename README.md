@@ -7,6 +7,21 @@ our approach will be 100% based on the NESTJS definitions.
 
 </br>
 
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+  - [**Features**](#features)
+- [Project Setup](#project-setup)
+- [Configuration and Database Setup](#configuration-and-database-setup)
+- [Constants & Exceptions](#constants--exceptions)
+- [Migrations Setup](#migrations-setup)
+- [Basic Security Setup](#basic-security-setup)
+- [Swagger Setup](#swagger-setup)
+- [File Structure](#file-structure)
+- [Tools](#tools)
+
+</br>
+
 ### **Features**
 
 - Quick start.
@@ -168,111 +183,6 @@ You may read more about implementing the OpenAPI specification(OAS) to a NestJS 
 
 </br>
 
-## Implementing the Modules
-
-</br></br></br></br></br></br>
-
-## Table of Contents
-
-- [Project Setup](#project-setup)
-- [Configuration and Database Setup](#configuration-and-database-setup)
-- [Constants & Exceptions](#constants--exceptions)
-- [Migrations Setup](#migrations-setup)
-- [Basic Security Setup](#basic-security-setup)
-- [Swagger Setup](#swagger-setup)
-- [Implementing the Modules](#implementing-the-modules)
-- [Table of Contents](#table-of-contents)
-- [Getting Started](#getting-started)
-- [Prerequisites](#prerequisites)
-- [VS Code Plugins](#vs-code-plugins)
-  - [Must](#must)
-  - [Optionals](#optionals)
-- [Available Scripts](#available-scripts)
-  - [`npm start:dev`](#npm-startdev)
-  - [`npm test`](#npm-test)
-  - [`npm run build`](#npm-run-build)
-  - [`npm run eject`](#npm-run-eject)
-  - [`npm run lint`](#npm-run-lint)
-- [File Structure](#file-structure)
-- [Conventions](#conventions)
-  - [Organization / Best practices](#organization--best-practices)
-- [Tools](#tools)
-
-## Getting Started
-
-For Luminus Life+ we need to have a good starter point to start a project with NodeJS / TypeScript, including basic plugins, best practices, conventions, file structure, and more. You should use this template for API, Services and BackEnd projects that not include NESTJS or STRAPI as main framework.
-
-So basically, what you have here is a nodejs starter project created with `npx gts init` and essential configurations to start a clean and fast NodeJS App:
-
-- Support for reactive programming (RxJs).
-- Support for functional programming (Ramda).
-- Support for IoC, DI (inversify).
-- Support for Reflection (reflect-metadata).
-- Object-object mapping support (AutoMapperTs).
-- Unit testing and Coverage tests (jest, supertest).
-- Lint and formatting (ESLint + GTS + Prettier).
-- Datetime library (moment).
-- Solid and recommended file structure.
-- Configuration files.
-
-we need husky Hooks to enforce commit lint for our code with commitlint Lets first install https://github.com/conventional-changelog/commitlint module
-
-So feel free to fork, propose new features and tools. We will be checking constantly PRs and merging the best features.
-
-Run `npm i` and then `npm run start:dev`.
-
-## Prerequisites
-
-NodeJS
-https://nodejs.org/en/
-
-GTS
-https://github.com/google/gts
-
-## VS Code Plugins
-
-Our official IDE is VS Code so we are going to include a list of basic plugins for NodeJs.
-
-### Must
-
-- Jest
-- ESLint
-- Prettier
-- EditorConfig for VS Code
-- DotENV
-
-### Optionals
-
-- Auto Close Tag
-- Auto Rename Tag
-- Auto import - ES6
-- Path Intellisense
-- TODO Highlight
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start:dev`
-
-Runs the app in the development mode.<br>
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-### `npm run lint`
-
-Lints all the files inside `./src` and shows the result without fixing.
-
 ## File Structure
 
 Folder structure is based on productivity:
@@ -310,13 +220,7 @@ src
 └── tsconfig.json           * TS compiler configurations (eg. set the root folder for roots when import files).
 ```
 
-## Conventions
-
-All the conventions are based on Google Style Guide: https://google.github.io/styleguide/tsguide.html
-
-### Organization / Best practices
-
-Fo reference to our best practices, please see: https://llplus.atlassian.net/wiki/spaces/TT/pages/34242619/Patterns+and+Best+Practices
+</br></br></br></br></br></br>
 
 ## Tools
 
