@@ -221,7 +221,7 @@ src
 └── tsconfig.json           * TS compiler configurations (eg. set the root folder for roots when import files).
 ```
 
-</br></br></br></br></br></br>
+</br>
 
 ## Tools
 
