@@ -4,6 +4,7 @@ import * as Joi from 'joi';
 
 import { SharedModule } from './shared/shared.module';
 import { DatabaseModule } from './database/database.module';
+import { SampleModuleModule } from './sample-module/sample-module.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { DatabaseModule } from './database/database.module';
     }),
     SharedModule,
     DatabaseModule,
+    SampleModuleModule,
   ],
 })
 export class AppModule {}

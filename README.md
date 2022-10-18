@@ -31,6 +31,7 @@ our approach will be 100% based on the NESTJS definitions.
 - Production-Ready Skeleton.
 - Followed SOLID Principles.
 - Centralized error handling mechanism.
+- [UUID](https://www.npmjs.com/package/uuid) for guid generation.
 - Request data validation using [Nest JS Pipe](https://docs.nestjs.com/techniques/validation).
 - Support for logging using [Winston](https://github.com/winstonjs/winston).
 - Testing: unit and integration tests with [Jest](https://jestjs.io/).
@@ -100,7 +101,7 @@ The values should be replaced with the correct ones for each of the environment 
 
 Up to now, we’ve been focusing on environment variables but the API will also need constants such as the app’s name, set up somewhere in the app.
 
-For this, we created a folder named `common` in your src folder and place two files in it: constants.ts and exceptions.ts
+For this, we created a folder named `shared` in your src folder and place two files in it: constants.ts and exceptions.ts
 
 Place put in those files information used by the system and that can be constant:
 
