@@ -2,15 +2,11 @@ import { NestFactory } from '@nestjs/core';
 import helmet from 'helmet';
 import { rateLimit } from 'express-rate-limit';
 import { ValidationPipe } from '@nestjs/common';
-import dotenv from 'dotenv';
-import compression from 'compression';
 
-import { E_TOO_MANY_REQUESTS } from './common/exceptions';
+import { E_TOO_MANY_REQUESTS } from './shared/exceptions';
+import { APP_NAME, APP_DESCRIPTION, APP_VERSION } from './shared/constants';
 import { AppModule } from './app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import { APP_NAME, APP_DESCRIPTION, APP_VERSION } from './common/constants';
-
-dotenv.config();
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -46,8 +42,6 @@ async function bootstrap() {
       },
     }),
   );
-
-  app.use(compression());
 
   const config = new DocumentBuilder()
     .setTitle(APP_NAME)

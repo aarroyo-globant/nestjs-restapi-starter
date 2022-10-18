@@ -37,7 +37,7 @@ our approach will be 100% based on the NESTJS definitions.
 - Testing: unit and integration tests with [Jest](https://jestjs.io/).
 - API documentation with [Open API / Swagger](https://www.openapis.org/).
 - Dependency management with [npm](https://www.npmjs.com/)
-- Environment variables using [dotenv](https://github.com/motdotla/dotenv).
+- .env file to define some necessary parameters, for NestJS we chose @nestjs/config that internally is using [dotenv](https://github.com/motdotla/dotenv).
 - Set security HTTP headers using [helmet](https://helmetjs.github.io/)
 - Cross-Origin Resource-Sharing enabled using [cors](https://github.com/expressjs/cors)
 - Gzip compression with [compression](https://github.com/expressjs/compression)
@@ -190,22 +190,22 @@ Folder structure is based on productivity:
 
 ```text
 src
-├── application             * Application Layer (dto, services, adapters, etc).
-│   └── ...
+├── database                * Module for database access.
+│   └── ...                 * Tables configured with ORM.
+├── sample-module           * Module sample.
+│   └── ...application      * Application layer (dto, services, adapters, etc).
+│   └── ...domain           * Domain layer (entities, repository interfaces, domain services, etc.).
+│   └── ...infrastructure   * Infrastructure layer (service bus, services, etc).
 ├── assets                  * Assets that are imported into your components(images, custom svg, etc).
 │   └── ...
 ├── config                  * Config files (bootstrapper, etc.)
 │   └── ...
-├── core                    * Core interfaces and implementations for the app.
+├── shared                  * Common code (utils, providers, builders, etc.)
 │   └── interfaces          * Contracts, interfaces.
 │   └── impl                * Implementations or concret classes
 ├── domain                  * Domain Layer (model objects, aggregate, entities, value objects, etc).
 │   └── ...
 ├── infrastructure          * Infrastructure Layer (database, service bus, etc).
-│   └── ...
-├── models                  * Common data models, constants, etc.
-│   └── ...
-├── shared                  * Common code (utils, providers, builders, etc.)
 │   └── ...
 ├── index.ts                * Main execution point.
 ```
